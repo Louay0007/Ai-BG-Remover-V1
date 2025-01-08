@@ -16,14 +16,8 @@ A powerful React + Vite application that removes backgrounds from images directl
 The app implements a cross-browser approach to background removal with optional WebGPU acceleration:
 
 ### Default Implementation (All Browsers)
-- Uses [RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4), a robust background removal model
 - Ensures consistent performance across all modern browsers
 - Processes images efficiently using WebAssembly
-
-### Optional WebGPU Acceleration
-- For browsers with WebGPU support, offers [MODNet](https://huggingface.co/Xenova/modnet) as an alternative
-- Can be enabled through a dropdown when WebGPU is available
-- Leverages GPU acceleration for potentially faster processing
 
 Both implementations use Transformers.js to run the machine learning models directly in the browser, eliminating the need for server-side processing.
 
@@ -70,8 +64,8 @@ npm run dev
 
 ## Credits
 
-Based on the [WebGPU background removal demo](https://github.com/huggingface/transformers.js-examples/tree/main/remove-background-webgpu) by [@xenova](https://github.com/xenova)
+Made By Louay Rjili.
 
 ## License
 
-MIT License - feel free to use this in your own projects!
+MIT License 
