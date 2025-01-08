@@ -39,12 +39,6 @@ export default function App() {
   const [isModelSwitching, setIsModelSwitching] = useState(false);
   const [images, setImages] = useState<ImageFile[]>([]);
 
-  useEffect(() => {
-    if (isMobileSafari()) {
-      window.location.href = 'https://bg-mobile.addy.ie';
-      return;
-    }
-
     // Only check iOS on load since that won't change
     const { isIOS: isIOSDevice } = getModelInfo();
     setIsIOS(isIOSDevice);
